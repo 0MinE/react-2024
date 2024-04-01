@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# 리액트 사이트 만들기!!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+간단하게 만들어 보는 리액트 페이지 
 
-## Available Scripts
 
-In the project directory, you can run:
+2. [react.js](https://github.com/0MinE/react-2024)를 이용하여 사이트를 제작합니다. 
 
-### `npm start`
+이 사이트는 프론트앤드 개발의 시발점이 될 수 있는 사이트 제작 입니다.
+깊이 배우기 보다는 다양한 방법을 사용하여 흐름과 감각을 익히기 위한 공부 사이트입니다!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 완성작 보기 
+미리보기 : 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 사용 스택
+- react(https://ko.legacy.reactjs.org/) 를 사용하여 사이트를 번들링하고 관리합니다.
+- sass(https://sass-lang.com/install/)를 활용하여 다양한 효과를 제공합니다.
+- bootstrap(https://react-bootstrap.netlify.app/docs/getting-started/introduction/) 를 이용하여 다양한 구성요소를 사용합니다.
+- gsap(https://greensock.com/gsap)를 이용하여 패럴랙스 효과를 제공합니다.
+- netlify(https://www.netlify.com/)를 통해 사이트를 배포합니다.
+- git(https://github.com/)을 사용하여 파일을 관리합니다.
+- HTML, CSS 기반으로 웹사이트의 기본 레이아웃 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업합니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 프로젝트 실행
+- react 설치 `npx create-react-app 사이트`
+- react-router-dom 설치 `npm install react-router-dom`
+- sass 설치 `npm install sass`
+- bootstrap 설치 `npm install react-bootstrap bootstrap`
+- gsap를 설치 `npm install gsap`
