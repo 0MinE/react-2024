@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// section
+@import "./section/header";
+@import "./section/intro";
+@import "./section/site";
+@import "./section/contact";
+@import "./section/footer";
+
+//setting
+@import "./setting/fonts";
+@import "./setting/vars";
+@import "./setting/reset";
+@import "./setting/common";
+@import "../fonts/pretendard-subset.css";
