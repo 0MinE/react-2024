@@ -1,0 +1,118 @@
+#header {
+	//@include position-fixed;
+	z-index: 10000;
+	background-color: #fff;
+}
+.header_inner {
+	//@include flex-between;
+	width: 1400px;
+	margin:0 auto;
+	//backdrop-filter: blur(15px);
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	
+	@media (max-width: 1400px){
+		width: 100%;
+	}
+	.header_nav, .header_mypg {
+
+		@media (max-width: 800px){
+			display: none;
+
+			&.show {
+				display: block;
+
+				ul {
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 68px;
+					background-color: rgba(116,99,99,0.1);
+					backdrop-filter: blur(15px);
+					z-index: 10000;
+					min-width: 150px;
+					padding: 20px 0;
+
+					li {
+						display: block;
+						text-align: right;
+
+						a {
+							display: inline-block;
+							padding: 10px;
+						}
+					}
+				}
+			}
+		}
+		
+		li {
+			display: inline;
+	
+			a {
+				text-transform: uppercase;
+				font-size: 14px;
+				padding: 14px;
+				position: relative;
+	
+				&::before {
+					content: '';
+					width: calc(100% - 28px);
+					height: 1px;
+					background-color: var(--black);
+					position: absolute;
+					left: 14px;
+					bottom: 10px;
+					transform: scaleX(0);
+					transition: all 0.3s;
+				}
+				&:hover::before {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+	.header_nav{
+		li::nth-child(1){
+			background-image: url(../../img/header_Icon01.png);
+			margin-left: 0;
+		}
+		li {
+			display: inline;
+			background-repeat: no-repeat;
+			margin-left: 20px;
+
+			&::nth-child(2) {
+				background-image: url(../../img/header_Icon02.png);
+			}
+			&::nth-child(3) {
+				background-image: url(../../img/header_Icon03.png);
+			}
+			a {
+				text-transform: uppercase;
+				font-size: 14px;
+				padding: 14px;
+				position: relative;
+				margin-left: 10px;
+			}
+		}
+	}
+	.header_mypg {
+		ul {
+			position: relative;
+		}
+		li:first-child::after{
+			display: block;
+			content: '';
+			width: 1px;
+			height: 14px;
+			top:6px;
+			background-color: var(--black);
+			position: absolute;
+			right: 41%;
+			transform: translateX(-50%);
+		}
+		
+	}
+}
