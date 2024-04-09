@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "./login.css";
+@import "./main.css";
 :root {
 	--full-screen: 1905px;
 	/* 

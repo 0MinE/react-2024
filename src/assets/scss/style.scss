@@ -13,3 +13,52 @@
 @import "./setting/reset";
 @import "./setting/common";
 @import "../fonts/pretendard-subset.css";
+
+.container .sec-body {
+	width:1400px;
+	margin:60px auto;
+	padding:30px;
+}
+.body-main {
+	background-color: white;
+ }
+ body,
+.header,
+.container {
+	min-width: 1080px;
+}
+header-box,
+.container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+//.container > .leftmenu {
+//	flex: 1 0 200px;
+//	max-width: 200px;
+//}
+//.container > .main {
+//	flex: 1 0 calc(100% - 200px);
+//	max-width: calc(100% - 200px);
+//	padding: 1rem 2rem 0;
+//}
+
+@media(min-width: 1400px) {
+	.header-box,
+	.container {
+/* 		max-width: 1320px; */
+		max-width: 100%;
+	}
+	.container > .leftmenu {
+		flex: 1 0 240px;
+		max-width: 240px;
+	}
+
+	.container > .main {
+		flex: 1 0 calc(100% - 240px);
+		max-width: calc(100% - 240px);
+	}
+}

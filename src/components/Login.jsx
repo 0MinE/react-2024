@@ -1,9 +1,12 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import Header from "../components/Header";
 
 const Login = () => {
 	return (
-		<div class="container">
+		<>
+		<Header />
+		<div className="container">
 			<div className="sec-box login_box">
 				<div className="sec-body">
 					{/* 로그인 박스 */}
@@ -67,7 +70,7 @@ const Login = () => {
 				</div>
 			</div>
 		</div>
-
+		</>
 	)
 	
 };
