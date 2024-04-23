@@ -2,14 +2,16 @@
 
 // section
 @import "./section/header";
-@import "./section/intro";
-@import "./section/site";
 @import "./section/contact";
+@import "./section/site";
 @import "./section/footer";
+@import "./section/main";
+@import "./section/intro";
 
 //setting
 @import "./setting/fonts";
 @import "./setting/vars";
+@import "./setting/from";
 @import "./setting/reset";
 @import "./setting/common";
 @import "../fonts/pretendard-subset.css";

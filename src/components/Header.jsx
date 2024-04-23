@@ -1,7 +1,20 @@
 import React from "react";
 import pvLogo from '../assets/img/PV_logo.png'
 import { Link } from 'react-router-dom';
-
+const headerNav = [
+	{
+		title: "intro",
+		url: "#intro",
+	},
+	{
+		title: "skill",
+		url: "#skill",
+	},
+	{
+		title: "site",
+		url: "#site",
+	},
+];
 const Header = () => {
 
 	return (
@@ -14,27 +27,13 @@ const Header = () => {
 				</div>
 				<nav className="header_nav" role="navigation" aria-label="메인 메뉴">
 					<ul>
-						<li>
-							<Link to="/">경매하기</Link>
-						</li>
-						<li>
-							<Link to="/tables">커뮤니티</Link>
-						</li>
-						<li>
-							<Link to="/from">고객센터</Link>
-						</li>
+						{headerNav.map((nav, key) => (
+							<li key={key}>
+								<a href={nav.url}>{nav.title}</a>
+							</li>
+						))}
 					</ul>
 				</nav>
-				<div className="header_mypg">
-					<ul>
-						<li>
-							<Link to="/">마이 페이지</Link>
-						</li>
-						<li>
-							<Link to="/login">로그인</Link>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</header>
 	);

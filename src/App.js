@@ -7,16 +7,16 @@ import FromView from "./components/InputFrom";
 import TableView from "./components/Tables";
 
 const App = () => {
-    return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<MainView />} />
-            <Route path="/login" element={<LoginView />} />
-            <Route path="/tables" element={<TableView />} />
-            <Route path="/from" element={<FromView />} />
-        </Routes>
-    </BrowserRouter>
-    );
+	return (
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<MainView />} />
+			<Route path="/login" element={<LoginView />} />
+			<Route path="/tables" element={<TableView />} />
+			<Route path="/from" element={<FromView />} />
+		</Routes>
+	</BrowserRouter>
+	);
 };
 
 export default App;

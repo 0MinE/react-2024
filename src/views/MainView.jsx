@@ -10,7 +10,7 @@ const MainView = () => {
 		<Header />
 		<Main>
 		</Main>
-		<Footer />
+		{/*<Footer />*/}
 	</>
 	);
 };
